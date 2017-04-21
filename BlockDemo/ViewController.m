@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)clickToSecondVC:(UIButton *)sender {
+    SecondViewController *secondVC = [SecondViewController new];
+    [self.navigationController pushViewController:secondVC animated:NO];
 }
 
 
